@@ -1,0 +1,110 @@
+/* General Stling */
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+html {
+  font-size: 17px;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+/* * {
+    font-family: "Trirong", serif;
+  } */
+
+*::selection {
+  background-color: var(--prime-color);
+}
+
+body {
+  --prime-color: #cdde49;
+  --shadow-color: #b5c922;
+  --text-color: #2d2d2d;
+  --text-highlight-color: #8c9d0f;
+  --background-color: #f8fae5;
+  --outline-color: red;
+  --rotation: rotate(-13deg);
+}
+
+header {
+  border-bottom: 0.3rem solid var(--prime-color);
+}
+
+footer {
+  border-top: 0.3rem solid var(--prime-color);
+}
+
+/* Specific Stling */
+/* Header Stling */
+
+.header-wrapper {
+  display: flex;
+}
+
+.logo-outline {
+  border: 0.3rem solid var(--prime-color);
+  border-radius: 0.8rem;
+  margin: 1rem;
+}
+
+.logo-header {
+  padding: 0rem 0.7rem;
+  color: var(--prime-color);
+  font-weight: bolder;
+  transform: var(--rotation);
+  letter-spacing: 0.1rem;
+}
+
+.header-text {
+  margin: auto;
+  font-size: 1.7rem;
+}
+
+/* Hex Code Styling */
+
+.color-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.color-title {
+  margin: 2.5rem 1rem 2rem 1rem;
+}
+
+.hex-code {
+  transform: var(--rotation);
+  margin: 0.5rem 1rem;
+  font-size: 4rem;
+  letter-spacing: 0.15rem;
+  display: inline-block;
+  _outline: 1px solid var(--outline-color);
+}
+
+.hex-name {
+  transform: var(--rotation);
+  margin: 0.5rem 1rem;
+  display: inline-block;
+  _outline: 1px solid var(--outline-color);
+}
+
+.color-description {
+  transform: var(--rotation);
+  margin: 0.5rem 1rem;
+  display: inline-block;
+  text-align: center;
+  _outline: 1px solid var(--outline-color);
+}
+
+.todo {
+  margin: 1rem;
+}
