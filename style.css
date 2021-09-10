@@ -19,10 +19,6 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
-/* * {
-    font-family: "Trirong", serif;
-  } */
-
 *::selection {
   background-color: var(--prime-color);
 }
@@ -90,29 +86,26 @@ footer {
   font-size: 4rem;
   letter-spacing: 0.15rem;
   display: inline-block;
-  _outline: 1px solid var(--outline-color);
   color: var(--prime-color);
   filter: drop-shadow(0.2rem 0.3rem 0rem var(--shadow-color));
   text-shadow: 0 0 80px var(--prime-color);
 }
 
 .hex-name {
-  position: absolute;
-  transform: var(--rotation) translateX(15px) translateY(-13px);
+  position: relative;
+  transform: var(--rotation) translate(15px, -13px);
   margin: 0.5rem 1rem;
   display: inline-block;
-  _outline: 1px solid var(--outline-color);
   font-size: 1.65rem;
   font-weight: 500;
 }
 
 .color-description {
-  position: absolute;
-  transform: var(--rotation) translateX(55px) translateY(40px);
+  position: relative;
+  transform: var(--rotation) translate(60px, -10px);
   margin: 0.5rem 1rem;
   display: inline-block;
   text-align: center;
-  _outline: 1px solid var(--outline-color);
   color: var(--text-highlight-color);
   font-size: 0.9rem;
 }
@@ -121,6 +114,11 @@ footer {
 
 .todo {
   margin-left: 4rem;
+}
+
+.todo-title {
+  font-weight: 500;
+  font-size: 1.3rem;
 }
 
 /* Other */
