@@ -8,6 +8,7 @@
 
 body {
   margin: 0;
+  background-color: var(--background-color);
 }
 
 html {
@@ -41,7 +42,7 @@ header {
 }
 
 footer {
-  border-top: 0.3rem solid var(--prime-color);
+  _border-top: 0.3rem solid var(--prime-color);
 }
 
 /* Specific Stling */
@@ -63,11 +64,13 @@ footer {
   font-weight: bolder;
   transform: var(--rotation);
   letter-spacing: 0.1rem;
+  font-weight: 700;
 }
 
 .header-text {
   margin: auto;
   font-size: 1.7rem;
+  font-weight: 500;
 }
 
 /* Hex Code Styling */
@@ -78,7 +81,7 @@ footer {
 }
 
 .color-title {
-  margin: 2.5rem 1rem 2rem 1rem;
+  margin: 2.5rem 1rem 2rem 4rem;
 }
 
 .hex-code {
@@ -88,23 +91,44 @@ footer {
   letter-spacing: 0.15rem;
   display: inline-block;
   _outline: 1px solid var(--outline-color);
+  color: var(--prime-color);
+  filter: drop-shadow(0.2rem 0.3rem 0rem var(--shadow-color));
+  text-shadow: 0 0 80px var(--prime-color);
 }
 
 .hex-name {
-  transform: var(--rotation);
+  position: absolute;
+  transform: var(--rotation) translateX(15px) translateY(-13px);
   margin: 0.5rem 1rem;
   display: inline-block;
   _outline: 1px solid var(--outline-color);
+  font-size: 1.65rem;
+  font-weight: 500;
 }
 
 .color-description {
-  transform: var(--rotation);
+  position: absolute;
+  transform: var(--rotation) translateX(55px) translateY(40px);
   margin: 0.5rem 1rem;
   display: inline-block;
   text-align: center;
   _outline: 1px solid var(--outline-color);
+  color: var(--text-highlight-color);
+  font-size: 0.9rem;
 }
 
+/* Todo Styling */
+
 .todo {
-  margin: 1rem;
+  margin-left: 4rem;
+}
+
+/* Other */
+
+.description {
+  margin-left: 4rem;
+}
+
+.footer-text {
+  margin-left: 4rem;
 }
