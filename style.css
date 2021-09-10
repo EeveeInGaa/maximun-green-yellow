@@ -38,7 +38,7 @@ header {
 }
 
 footer {
-  _border-top: 0.3rem solid var(--prime-color);
+  border-top: 0.2rem solid var(--prime-color);
 }
 
 /* Specific Stling */
@@ -71,6 +71,10 @@ footer {
 
 /* Hex Code Styling */
 
+.color {
+  margin-right: 2rem;
+}
+
 .color-wrapper {
   display: flex;
   flex-direction: column;
@@ -98,6 +102,7 @@ footer {
   display: inline-block;
   font-size: 1.65rem;
   font-weight: 500;
+  width: 100%;
 }
 
 .color-description {
@@ -110,10 +115,34 @@ footer {
   font-size: 0.9rem;
 }
 
+.color-description-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Description Styling */
+
+.description {
+  margin-left: 4rem;
+  align-self: flex-end;
+}
+
+.side-description {
+  _outline: 1px solid red;
+  margin: 2rem 2rem 0.5rem 1rem;
+  line-height: 1.2rem;
+  width: 70%;
+}
+
+.hex-code-word,
+.everything-word {
+  color: var(--text-highlight-color);
+}
+
 /* Todo Styling */
 
 .todo {
-  margin-left: 4rem;
+  margin: 3rem 0rem 2rem 4rem;
 }
 
 .todo-title {
@@ -121,11 +150,11 @@ footer {
   font-size: 1.3rem;
 }
 
-/* Other */
-
-.description {
-  margin-left: 4rem;
+.rotate-text {
+  margin-left: 2rem;
 }
+
+/* Other */
 
 .footer-text {
   margin-left: 4rem;
