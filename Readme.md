@@ -1,6 +1,7 @@
 # A crazy color ..
 
 **why do I do this?**
+
 this is a little single-page application to learn new css stuff and stay trained in it.
 
 furthermore I create mockups in figma to learn how to use it and try to implement this style in code with css.
